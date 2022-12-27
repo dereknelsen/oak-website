@@ -4,6 +4,7 @@ import Image from 'next/image'
 import oakHill from '../public/oakhillfront.jpeg'
 import Logo from './logo'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Letter() {
   return (
@@ -50,6 +51,12 @@ export default function Letter() {
         <i className="text-gray-500">
           — Lori, David and the Oak Hill Café Team.
         </i>
+        <p>
+          Email any questions or comments to{' '}
+          <Link type="email" href="mailto:info@oakhillcafe.com">
+            info@oakhillcafe.com
+          </Link>
+        </p>
       </div>
     </motion.article>
   )
